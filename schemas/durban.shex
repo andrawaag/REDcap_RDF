@@ -1,0 +1,467 @@
+PREFIX dc: <http://purl.org/dc/terms/>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX pav: <http://purl.org/pav/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX omero: <<https://wsi-omero-prod-02.internal.sanger.ac.uk/>
+PREFIX ome: <<http://www.openmicroscopy.org/Schemas/OME/2016-06#>
+PREFIX weso-s: <http://weso.es/shapes/>
+PREFIX brick: <https://brickschema.org/schema/Brick#>
+PREFIX csvw: <http://www.w3.org/ns/csvw#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcmitype: <http://purl.org/dc/dcmitype/>
+PREFIX dcam: <http://purl.org/dc/dcam/>
+PREFIX doap: <http://usefulinc.com/ns/doap#>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX ssn: <http://www.w3.org/ns/ssn/>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX wgs: <https://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX xml: <http://www.w3.org/XML/1998/namespace/>
+PREFIX ns1: <https://population.ahri.org/api/>
+PREFIX ns2: <http://www.openmicroscopy.org/rdf/2016-06/ome_core/>
+PREFIX ns3: <http://www.openmicroscopy.org/TBD/omero/>
+
+weso-s:Ellipse  [<https://omero.ahri.org/Ellipse/>~]  AND   # 1626 instances.
+{
+   rdf:type  [<http://www.openmicroscopy.org/Schemas/OME/2016-06#Ellipse>]  ;          # 100.0 % (1626 instances).
+   ns2:StrokeWidth  BNode  ;                                   # 100.0 % (1626 instances).
+            // rdfs:comment "nedaac27b8d9940399573cc8440ca01f9b75407" ;
+   ns2:RadiusX  xsd:double  ;                                  # 100.0 % (1626 instances).
+            // rdfs:comment "8077.153" ;
+   ns2:X  xsd:double  ;                                        # 100.0 % (1626 instances).
+            // rdfs:comment "165743.2" ;
+   ns2:FillColor  xsd:integer  ;                               # 100.0 % (1626 instances).
+            // rdfs:comment "0" ;
+   ns2:RadiusY  xsd:double  ;                                  # 100.0 % (1626 instances).
+            // rdfs:comment "5005.916" ;
+   ns2:StrokeColor  xsd:integer  ;                             # 100.0 % (1626 instances).
+            // rdfs:comment "255" ;
+   ns2:Y  xsd:double  ;                                        # 100.0 % (1626 instances).
+            // rdfs:comment "41773.83" ;
+   dc:isPartOf  @weso-s:ROI  ;                                 # 100.0 % (1626 instances).
+            // rdfs:comment <https://omero.ahri.org/ROI/1085> ;
+   ns2:Text  xsd:string  ?;
+            // rdfs:comment "??" ;
+            # 24.354243542435423 % (396 instances). obj: xsd:string. Cardinality: {1}
+   ns2:TheT  xsd:integer  ?;
+            // rdfs:comment "0" ;
+            # 0.06150061500615006 % (1 instance). obj: xsd:integer. Cardinality: {1}
+   ns2:TheZ  xsd:integer  ?
+            // rdfs:comment "1" ;
+            # 0.06150061500615006 % (1 instance). obj: xsd:integer. Cardinality: {1}
+} // rdfs:comment <https://omero.ahri.org/Ellipse/1347>
+
+
+weso-s:MapAnnotation  [<https://omero.ahri.org/MapAnnotation/>~]  AND   # 31933 instances.
+{
+   rdf:type  [<http://www.openmicroscopy.org/Schemas/OME/2016-06#MapAnnotation>]  ;          # 100.0 % (31933 instances).
+   dc:isPartOf  IRI  ;                                         # 100.0 % (31933 instances).
+            // rdfs:comment <https://omero.ahri.org/Image/24730> ;
+            # 99.99686844330317 % (31932 instances). obj: @weso-s:Image. Cardinality: {1}
+            # 0.003131556696833996 % (1 instance). obj: @weso-s:Project. Cardinality: {1}
+   ns2:Map  BNode  ;                                           # 100.0 % (31933 instances).
+            // rdfs:comment "nedaac27b8d9940399573cc8440ca01f9b13525" ;
+   ns2:Namespace  xsd:string                                   # 100.0 % (31933 instances).
+            // rdfs:comment "AHRI_SL" ;
+} // rdfs:comment <https://omero.ahri.org/MapAnnotation/51476>
+
+
+weso-s:Image  [<https://omero.ahri.org/Image/>~]  AND   # 32014 instances.
+{
+   rdf:type  [<http://www.openmicroscopy.org/Schemas/OME/2016-06#Image>]  ;          # 100.0 % (32014 instances).
+   dc:hasPart  @weso-s:Pixels  ;                               # 100.0 % (32014 instances).
+            // rdfs:comment <https://omero.ahri.org/MapAnnotation/42929> ;
+            # 99.73761479352783 % (31930 instances). obj: @weso-s:MapAnnotation. Cardinality: +
+            # 0.12494533641531831 % (40 instances). obj: @weso-s:TagAnnotation. Cardinality: {1}
+   dc:isPartOf  @weso-s:Dataset  ;                             # 100.0 % (32014 instances).
+            // rdfs:comment <https://omero.ahri.org/Dataset/430> ;
+   ns2:Name  xsd:string  ;                                     # 100.0 % (32014 instances).
+            // rdfs:comment "SL05 A12-1 H&E.ndpi [macro image]" ;
+   ns3:series  xsd:integer  ;                                  # 100.0 % (32014 instances).
+            // rdfs:comment "0" ;
+   ns2:AcquisitionDate  xsd:integer  ?;
+            // rdfs:comment "1693455573000" ;
+            # 99.19722621353158 % (31757 instances). obj: xsd:integer. Cardinality: {1}
+   ns2:Description  xsd:string  ?
+            // rdfs:comment "000377" ;
+            # 24.20815893046792 % (7750 instances). obj: xsd:string. Cardinality: {1}
+} // rdfs:comment <https://omero.ahri.org/Image/34450>
+
+
+weso-s:Pixels  [<https://omero.ahri.org/Pixels/>~]  AND   # 32014 instances.
+{
+   rdf:type  [<http://www.openmicroscopy.org/Schemas/OME/2016-06#Pixels>]  ;          # 100.0 % (32014 instances).
+   ns2:SizeT  xsd:integer  ;                                   # 100.0 % (32014 instances).
+            // rdfs:comment "1" ;
+   ns2:SizeY  xsd:integer  ;                                   # 100.0 % (32014 instances).
+            // rdfs:comment "354" ;
+   dc:isPartOf  @weso-s:Image  ;                               # 100.0 % (32014 instances).
+            // rdfs:comment <https://omero.ahri.org/Image/38313> ;
+   ns2:SizeX  xsd:integer  ;                                   # 100.0 % (32014 instances).
+            // rdfs:comment "600" ;
+   ns2:SizeC  xsd:integer  ;                                   # 100.0 % (32014 instances).
+            // rdfs:comment "3" ;
+   ns2:Type  IRI  ;                                            # 100.0 % (32014 instances).
+            // rdfs:comment <https://omero.ahri.org/PixelsType/5> ;
+   ns2:SizeZ  xsd:integer  ;                                   # 100.0 % (32014 instances).
+            // rdfs:comment "1" ;
+   ns3:sha1  xsd:string  ;                                     # 100.0 % (32014 instances).
+            // rdfs:comment "a0494213ce8bc89741093512add137a25ddad4e9" ;
+   ns2:SignificantBits  xsd:integer  ;                         # 100.0 % (32014 instances).
+            // rdfs:comment "8" ;
+   ns2:PhysicalSizeY  BNode  ?;
+            // rdfs:comment "nedaac27b8d9940399573cc8440ca01f9b58983" ;
+            # 72.62447679140377 % (23250 instances). obj: BNode. Cardinality: {1}
+   ns2:PhysicalSizeX  BNode  ?;
+            // rdfs:comment "nedaac27b8d9940399573cc8440ca01f9b40608" ;
+            # 72.62447679140377 % (23250 instances). obj: BNode. Cardinality: {1}
+   dc:hasPart  @weso-s:ROI  *
+            // rdfs:comment <https://omero.ahri.org/ROI/890> ;
+            # 5.228962328981071 % (1674 instances). obj: @weso-s:ROI. Cardinality: +
+            # 2.4364340600987067 % (780 instances). obj: @weso-s:ROI. Cardinality: {1}
+            # 1.0589117261198226 % (339 instances). obj: @weso-s:ROI. Cardinality: {2}
+            # 0.5560067470481664 % (178 instances). obj: @weso-s:ROI. Cardinality: {3}
+            # 0.3217342412694446 % (103 instances). obj: @weso-s:ROI. Cardinality: {4}
+            # 0.29674517398638095 % (95 instances). obj: @weso-s:ROI. Cardinality: {5}
+            # 0.16555257075029672 % (53 instances). obj: @weso-s:ROI. Cardinality: {6}
+            # 0.1030799025426376 % (33 instances). obj: @weso-s:ROI. Cardinality: {7}
+            # 0.07809083525957394 % (25 instances). obj: @weso-s:ROI. Cardinality: {8}
+            # 0.043730867745361404 % (14 instances). obj: @weso-s:ROI. Cardinality: {9}
+            # 0.04060723433497845 % (13 instances). obj: @weso-s:ROI. Cardinality: {10}
+            # 0.021865433872680702 % (7 instances). obj: @weso-s:ROI. Cardinality: {12}
+            # 0.018741800462297745 % (6 instances). obj: @weso-s:ROI. Cardinality: {13}
+            # 0.018741800462297745 % (6 instances). obj: @weso-s:ROI. Cardinality: {15}
+            # 0.015618167051914789 % (5 instances). obj: @weso-s:ROI. Cardinality: {11}
+            # 0.015618167051914789 % (5 instances). obj: @weso-s:ROI. Cardinality: {16}
+            # 0.01249453364153183 % (4 instances). obj: @weso-s:ROI. Cardinality: {14}
+            # 0.006247266820765915 % (2 instances). obj: @weso-s:ROI. Cardinality: {20}
+            # 0.006247266820765915 % (2 instances). obj: @weso-s:ROI. Cardinality: {17}
+            # 0.0031236334103829574 % (1 instance). obj: @weso-s:ROI. Cardinality: {21}
+            # 0.0031236334103829574 % (1 instance). obj: @weso-s:ROI. Cardinality: {29}
+            # 0.0031236334103829574 % (1 instance). obj: @weso-s:ROI. Cardinality: {26}
+            # 0.0031236334103829574 % (1 instance). obj: @weso-s:ROI. Cardinality: {19}
+} // rdfs:comment <https://omero.ahri.org/Pixels/40760>
+
+
+weso-s:Line  [<https://omero.ahri.org/Line/>~]  AND   # 2019 instances.
+{
+   rdf:type  [<http://www.openmicroscopy.org/Schemas/OME/2016-06#Line>]  ;          # 100.0 % (2019 instances).
+   ns2:X1  xsd:double  ;                                       # 100.0 % (2019 instances).
+            // rdfs:comment "41380.54" ;
+   ns2:FillColor  xsd:integer  ;                               # 100.0 % (2019 instances).
+            // rdfs:comment "0" ;
+   ns2:Y1  xsd:double  ;                                       # 100.0 % (2019 instances).
+            // rdfs:comment "43761.6" ;
+   ns2:Y2  xsd:double  ;                                       # 100.0 % (2019 instances).
+            // rdfs:comment "14021.15" ;
+   ns2:MarkerStart  xsd:string  ;                              # 100.0 % (2019 instances).
+            // rdfs:comment "Arrow" ;
+   ns2:StrokeColor  xsd:integer  ;                             # 100.0 % (2019 instances).
+            // rdfs:comment "255" ;
+   ns2:X2  xsd:double  ;                                       # 100.0 % (2019 instances).
+            // rdfs:comment "49144.21" ;
+   ns2:StrokeWidth  BNode  ;                                   # 100.0 % (2019 instances).
+            // rdfs:comment "nedaac27b8d9940399573cc8440ca01f9b77714" ;
+   dc:isPartOf  @weso-s:ROI  ;                                 # 100.0 % (2019 instances).
+            // rdfs:comment <https://omero.ahri.org/ROI/2096> ;
+   ns2:Text  xsd:string  ?;
+            // rdfs:comment "BV?" ;
+            # 7.429420505200595 % (150 instances). obj: xsd:string. Cardinality: {1}
+   ns2:MarkerEnd  xsd:string  ?
+            // rdfs:comment "Arrow" ;
+            # 3.9128281327389796 % (79 instances). obj: xsd:string. Cardinality: {1}
+} // rdfs:comment <https://omero.ahri.org/Line/2741>
+
+
+weso-s:Rectangle  [<https://omero.ahri.org/Rectangle/>~]  AND   # 444 instances.
+{
+   rdf:type  [<http://www.openmicroscopy.org/Schemas/OME/2016-06#Rectangle>]  ;          # 100.0 % (444 instances).
+   ns2:X  xsd:double  ;                                        # 100.0 % (444 instances).
+            // rdfs:comment "42898.02" ;
+   ns2:StrokeColor  xsd:integer  ;                             # 100.0 % (444 instances).
+            // rdfs:comment "255" ;
+   ns2:Height  xsd:double  ;                                   # 100.0 % (444 instances).
+            // rdfs:comment "7186.838" ;
+   ns2:Width  xsd:double  ;                                    # 100.0 % (444 instances).
+            // rdfs:comment "42740.89" ;
+   dc:isPartOf  @weso-s:ROI  ;                                 # 100.0 % (444 instances).
+            // rdfs:comment <https://omero.ahri.org/ROI/1127> ;
+   ns2:FillColor  xsd:integer  ;                               # 100.0 % (444 instances).
+            // rdfs:comment "0" ;
+   ns2:StrokeWidth  BNode  ;                                   # 100.0 % (444 instances).
+            // rdfs:comment "nedaac27b8d9940399573cc8440ca01f9b80848" ;
+   ns2:Y  xsd:double  ;                                        # 100.0 % (444 instances).
+            // rdfs:comment "64000.64" ;
+   ns2:Text  xsd:string  ?
+            // rdfs:comment "RBC..." ;
+            # 36.486486486486484 % (162 instances). obj: xsd:string. Cardinality: {1}
+} // rdfs:comment <https://omero.ahri.org/Rectangle/5153>
+
+
+weso-s:Dataset  [<https://omero.ahri.org/Dataset/>~]  AND   # 1288 instances.
+{
+   rdf:type  [<http://www.openmicroscopy.org/Schemas/OME/2016-06#Dataset>]  ;          # 100.0 % (1288 instances).
+   dc:isPartOf  @weso-s:Project  ;                             # 100.0 % (1288 instances).
+            // rdfs:comment <https://omero.ahri.org/Project/358> ;
+   ns2:Name  xsd:string  ;                                     # 100.0 % (1288 instances).
+            // rdfs:comment "WSI SL00033" ;
+   dc:hasPart  @weso-s:Image  *;
+            // rdfs:comment <https://omero.ahri.org/Image/25258> ;
+            # 99.76708074534162 % (1285 instances). obj: @weso-s:Image. Cardinality: +
+            # 24.84472049689441 % (320 instances). obj: @weso-s:Image. Cardinality: {6}
+            # 9.239130434782608 % (119 instances). obj: @weso-s:Image. Cardinality: {5}
+            # 6.987577639751552 % (90 instances). obj: @weso-s:Image. Cardinality: {3}
+            # 6.832298136645963 % (88 instances). obj: @weso-s:Image. Cardinality: {9}
+            # 6.288819875776397 % (81 instances). obj: @weso-s:Image. Cardinality: {7}
+            # 4.3478260869565215 % (56 instances). obj: @weso-s:Image. Cardinality: {12}
+            # 4.037267080745342 % (52 instances). obj: @weso-s:Image. Cardinality: {15}
+            # 3.9596273291925463 % (51 instances). obj: @weso-s:Image. Cardinality: {18}
+            # 3.3385093167701863 % (43 instances). obj: @weso-s:Image. Cardinality: {21}
+            # 3.260869565217391 % (42 instances). obj: @weso-s:Image. Cardinality: {24}
+            # 2.639751552795031 % (34 instances). obj: @weso-s:Image. Cardinality: {4}
+            # 2.329192546583851 % (30 instances). obj: @weso-s:Image. Cardinality: {8}
+            # 2.018633540372671 % (26 instances). obj: @weso-s:Image. Cardinality: {27}
+            # 1.3198757763975155 % (17 instances). obj: @weso-s:Image. Cardinality: {30}
+            # 1.0093167701863355 % (13 instances). obj: @weso-s:Image. Cardinality: {36}
+            # 1.0093167701863355 % (13 instances). obj: @weso-s:Image. Cardinality: {33}
+            # 0.8540372670807453 % (11 instances). obj: @weso-s:Image. Cardinality: {2}
+            # 0.8540372670807453 % (11 instances). obj: @weso-s:Image. Cardinality: {42}
+            # 0.8540372670807453 % (11 instances). obj: @weso-s:Image. Cardinality: {39}
+            # 0.8540372670807453 % (11 instances). obj: @weso-s:Image. Cardinality: {45}
+            # 0.8540372670807453 % (11 instances). obj: @weso-s:Image. Cardinality: {10}
+            # 0.7763975155279503 % (10 instances). obj: @weso-s:Image. Cardinality: {14}
+            # 0.4658385093167702 % (6 instances). obj: @weso-s:Image. Cardinality: {11}
+            # 0.38819875776397517 % (5 instances). obj: @weso-s:Image. Cardinality: {1}
+            # 0.3105590062111801 % (4 instances). obj: @weso-s:Image. Cardinality: {32}
+            # 0.3105590062111801 % (4 instances). obj: @weso-s:Image. Cardinality: {51}
+            # 0.3105590062111801 % (4 instances). obj: @weso-s:Image. Cardinality: {54}
+            # 0.3105590062111801 % (4 instances). obj: @weso-s:Image. Cardinality: {19}
+            # 0.3105590062111801 % (4 instances). obj: @weso-s:Image. Cardinality: {72}
+            # 0.3105590062111801 % (4 instances). obj: @weso-s:Image. Cardinality: {48}
+            # 0.2329192546583851 % (3 instances). obj: @weso-s:Image. Cardinality: {63}
+            # 0.2329192546583851 % (3 instances). obj: @weso-s:Image. Cardinality: {57}
+            # 0.2329192546583851 % (3 instances). obj: @weso-s:Image. Cardinality: {13}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {23}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {34}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {43}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {58}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {105}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {35}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {26}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {147}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {22}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {129}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {66}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {116}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {102}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {81}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {20}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {78}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {59}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {37}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {144}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {31}
+            # 0.15527950310559005 % (2 instances). obj: @weso-s:Image. Cardinality: {29}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {168}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {336}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {261}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {99}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {210}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {186}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {16}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {40}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {28}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {96}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {164}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {69}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {180}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {118}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {125}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {53}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {600}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {399}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {88}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {367}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {1017}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {111}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {207}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {50}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {306}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {60}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {120}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {1266}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {87}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {381}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {89}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {112}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {765}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {162}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {372}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {267}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {104}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {438}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {426}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {444}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {561}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {100}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {93}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {813}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {177}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {154}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {41}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {243}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {131}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {348}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {185}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {642}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {92}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {90}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {56}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {62}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {114}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {459}
+            # 0.07763975155279502 % (1 instance). obj: @weso-s:Image. Cardinality: {354}
+   ns2:Description  xsd:string  ?
+            // rdfs:comment "" ;
+            # 0.07763975155279502 % (1 instance). obj: xsd:string. Cardinality: {1}
+} // rdfs:comment <https://omero.ahri.org/Dataset/534>
+
+
+weso-s:ROI  [<https://omero.ahri.org/ROI/>~]  AND   # 4496 instances.
+{
+   rdf:type  [<http://www.openmicroscopy.org/Schemas/OME/2016-06#ROI>]  ;          # 100.0 % (4496 instances).
+   dc:hasPart  IRI  ;                                          # 100.0 % (4496 instances).
+            // rdfs:comment <https://omero.ahri.org/Ellipse/1353> ;
+            # 44.906583629893234 % (2019 instances). obj: @weso-s:Line. Cardinality: {1}
+            # 36.16548042704626 % (1626 instances). obj: @weso-s:Ellipse. Cardinality: {1}
+            # 9.875444839857652 % (444 instances). obj: @weso-s:Rectangle. Cardinality: {1}
+            # 6.539145907473309 % (294 instances). obj: @weso-s:Polygon. Cardinality: {1}
+            # 2.157473309608541 % (97 instances). obj: @weso-s:Polyline. Cardinality: {1}
+            # 0.3558718861209964 % (16 instances). obj: @weso-s:Point. Cardinality: {1}
+   ns2:shapes  IRI  ;                                          # 100.0 % (4496 instances).
+            // rdfs:comment <https://omero.ahri.org/Ellipse/4251> ;
+            # 44.906583629893234 % (2019 instances). obj: @weso-s:Line. Cardinality: {1}
+            # 36.16548042704626 % (1626 instances). obj: @weso-s:Ellipse. Cardinality: {1}
+            # 9.875444839857652 % (444 instances). obj: @weso-s:Rectangle. Cardinality: {1}
+            # 6.539145907473309 % (294 instances). obj: @weso-s:Polygon. Cardinality: {1}
+            # 2.157473309608541 % (97 instances). obj: @weso-s:Polyline. Cardinality: {1}
+            # 0.3558718861209964 % (16 instances). obj: @weso-s:Point. Cardinality: {1}
+   dc:isPartOf  @weso-s:Pixels  ;                              # 100.0 % (4496 instances).
+            // rdfs:comment <https://omero.ahri.org/Pixels/14700> ;
+   ns2:Description  xsd:string  ?
+            // rdfs:comment "DN5" ;
+            # 0.1112099644128114 % (5 instances). obj: xsd:string. Cardinality: {1}
+} // rdfs:comment <https://omero.ahri.org/ROI/4575>
+
+
+weso-s:Project  [<https://omero.ahri.org/Project/>~]  AND   # 709 instances.
+{
+   rdf:type  [<http://www.openmicroscopy.org/Schemas/OME/2016-06#Project>]  ;          # 100.0 % (709 instances).
+   dc:hasPart  @weso-s:Dataset  +;                             # 100.0 % (709 instances).
+            // rdfs:comment <https://omero.ahri.org/Dataset/535> ;
+            # 81.66431593794076 % (579 instances). obj: @weso-s:Dataset. Cardinality: {2}
+            # 18.335684062059237 % (130 instances). obj: @weso-s:Dataset. Cardinality: {1}
+            # 6.911142454160791 % (49 instances). obj: @weso-s:TagAnnotation. Cardinality: {1}
+            # 0.14104372355430184 % (1 instance). obj: @weso-s:MapAnnotation. Cardinality: {1}
+   ns2:Name  xsd:string  ;                                     # 100.0 % (709 instances).
+            // rdfs:comment "SL00656" ;
+   ns2:Description  xsd:string  ?
+            // rdfs:comment "" ;
+            # 0.14104372355430184 % (1 instance). obj: xsd:string. Cardinality: {1}
+} // rdfs:comment <https://omero.ahri.org/Project/772>
+
+
+weso-s:Polygon  [<https://omero.ahri.org/Polygon/>~]  AND   # 294 instances.
+{
+   rdf:type  [<http://www.openmicroscopy.org/Schemas/OME/2016-06#Polygon>]  ;          # 100.0 % (294 instances).
+   dc:isPartOf  @weso-s:ROI  ;                                 # 100.0 % (294 instances).
+            // rdfs:comment <https://omero.ahri.org/ROI/4955> ;
+   ns2:FillColor  xsd:integer  ;                               # 100.0 % (294 instances).
+            // rdfs:comment "0" ;
+   ns2:StrokeColor  xsd:integer  ;                             # 100.0 % (294 instances).
+            // rdfs:comment "255" ;
+   ns2:Points  xsd:string  ;                                   # 100.0 % (294 instances).
+            // rdfs:comment "72661.615024,34866.85843099999 72657.6220032,34865.635870399994 72649.433672,34863.8635973 72639.0509384,34862.144096599994 72622.014636,34858.392858499996 72600.576336,34854.7515629 72588.197092,34852.425179599995 72560.8308272,34849.15329079999 72532.391548,34847.0072132 72503.4905208,34843.9991864 72476.3793168,34842.2620949 72450.398296,34841.5980422 72425.08571039999,34841.131885999996 72399.9710168,34840.006074799996 72377.98301679999,34840.560184999995 72358.6511672,34841.9278697 72340.656188,34843.704540499995 72325.5196488,34845.6263354 72312.58630719999,34847.4909602 72301.84736799999,34849.3028126 72292.238612,34852.18330609999 72283.2982912,34855.27049149999 72278.69400399999,34856.0444867 72271.08175839999,34859.5406582 72262.39649839999,34864.1582432 72253.45178,34867.2454286 72243.2361552,34872.1224779 72233.88246,34876.5377687 72223.6668352,34881.41921569999 72214.1108504,34886.498559199994 72204.352576,34892.246353099996 72195.7244848,34899.0627881 72188.2221792,34906.95665959999 72182.3074072,34916.7855191 72178.3935432,34927.225658899995 72174.67757120001,34937.001745999994 72172.0917824,34947.84647419999 72171.238648,34957.7720831 72172.2764816,34963.9068746 72173.82883439999,34973.10686299999 72176.24751439999,34981.8494906 72179.0751712,34989.259615099996 72183.63988,34995.7462226 72189.532664,35002.637418499995 72197.1668976,35008.605097399995 72204.5372752,35013.042376699996 72212.83554639999,35019.2123498 72223.3326176,35025.3295505 72233.3679408,35030.580404299995 72246.26610159999,35035.97198449999 72264.22589999999,35041.4647118 72285.5146816,35047.9689101 72308.333828,35054.2136441 72344.350172,35060.1285506 72369.25817839999,35061.918414499996 72394.9841384,35061.052067599994 72419.1137696,35058.241937299994 72443.1950272,35053.232957 72467.4741768,35047.559923999994 72491.5510368,35042.555341399995 72514.097532,35037.8058254 72537.3036672,35033.2586036 72557.4490728,35029.230310399995 72575.5935704,35024.5907369 72593.5357784,35020.619613799994 72616.5440216,35016.7364447 72628.3515776,35013.7987811 72634.68851919999,35012.1012689 72646.443304,35006.96035759999 72665.199068,35000.328625999995 72677.4112032,34996.058459299995 72687.890684,34992.71620729999 72696.8354024,34989.62902189999 72703.7836104,34985.934953899996 72707.86458319999,34982.09136409999 72710.61748079999,34977.838788199995 72713.77935520001,34972.25810689999 72715.4064672,34966.9368899 72716.7741208,34960.0808756 72717.73279760001,34954.557364399996 72718.8981616,34948.365402799995 72720.410936,34938.646485799996 72720.9122624,34932.25223 72722.0776264,34926.0602684 72723.0363032,34920.536757199996 72723.12865279999,34915.4750045 72723.88504,34910.61554599999 72723.7751,34906.217846 72722.79443519999,34902.28190449999 72721.6158784,34899.0100157 72720.2262368,34896.402179599994 72717.7152072,34892.7257024 72714.7952008,34890.37733059999 72710.5427216,34887.62437039999 72708.0888608,34886.1467432 72704.2981296,34884.2645276 72700.7712544,34883.912711599995" ;
+   ns2:StrokeWidth  BNode  ;                                   # 100.0 % (294 instances).
+            // rdfs:comment "nedaac27b8d9940399573cc8440ca01f9b80579" ;
+   ns2:Text  xsd:string  ?
+            // rdfs:comment "LT4" ;
+            # 24.489795918367346 % (72 instances). obj: xsd:string. Cardinality: {1}
+} // rdfs:comment <https://omero.ahri.org/Polygon/1879>
+
+
+weso-s:Polyline  [<https://omero.ahri.org/Polyline/>~]  AND   # 97 instances.
+{
+   rdf:type  [<http://www.openmicroscopy.org/Schemas/OME/2016-06#Polyline>]  ;          # 100.0 % (97 instances).
+   ns2:FillColor  xsd:integer  ;                               # 100.0 % (97 instances).
+            // rdfs:comment "0" ;
+   ns2:StrokeWidth  BNode  ;                                   # 100.0 % (97 instances).
+            // rdfs:comment "nedaac27b8d9940399573cc8440ca01f9b80644" ;
+   ns2:StrokeColor  xsd:integer  ;                             # 100.0 % (97 instances).
+            // rdfs:comment "255" ;
+   dc:isPartOf  @weso-s:ROI  ;                                 # 100.0 % (97 instances).
+            // rdfs:comment <https://omero.ahri.org/ROI/3814> ;
+   ns2:Points  xsd:string  ;                                   # 100.0 % (97 instances).
+            // rdfs:comment "42237.953232800006,44715.8582148 42247.803856800005,44662.483329899995 42250.8338032,44579.3975838 42238.4413664,44462.4759339 42223.010188,44285.978642099995 42203.977375200004,44149.988565 42191.09680480001,44001.1352154 42162.78505600001,43818.441564299996 42150.265088800006,43690.873082699996 42115.1634456,43478.472968099995 42074.6615496,43332.1614891 42027.624820000005,43177.4284146 41981.06303120001,43054.6270398 41951.98170240001,42961.3738113 41940.71065360001,42918.957994799996 41936.1283544,42895.606207799996 41933.573348800004,42867.9622656 41922.62772240001,42846.8357148 41907.029435200006,42802.3529793 41880.9912456,42768.670995 41850.4719016,42722.2840554 41837.3142824,42694.8028281 41809.17843760001,42665.412999 41794.077079200004,42652.8619632 41764.063459200006,42638.406723299995 41734.0322488,42623.9470857 41708.306288800006,42611.5587648 41691.13805840001,42603.2954865 41648.5912784,42603.933153 41578.366004,42607.1082924 41495.589979200005,42625.376338199996 41444.762518400006,42643.1694324 41372.949710400004,42682.568426699996 41320.187305600004,42715.291712399994 41288.7488632,42747.702761399996 41267.76791360001,42769.3086615 41205.02295680001,42844.768795799995 41169.609084,42896.4021915 41130.34731120001,42977.8959702 41076.819724,43100.059678499994 41058.684021600006,43170.5987865 41047.2986352,43260.1975263 41033.925533600006,43364.726457599994 41035.856080000005,43492.4532564 41042.0259128,43622.246974199996 41052.51858640001,43754.1032133 41069.211876,43873.0917822 41092.400420800004,44000.4975489 41110.843955200005,44093.9090946 41128.597066400005,44144.7465066 41153.2456144,44225.2903821 41189.116837600006,44348.2500741 41211.408272,44411.796839099996 41264.430135200004,44543.0154117 41295.573938400004,44631.980882699994 41387.4354048,44792.430967199994 41433.3199632,44872.658208299996 41507.322776,44982.270880799995 41546.254728800006,45022.1492244 41568.00525840001,45053.759891999995 41593.94670080001,45076.7994423 41626.167916000006,45097.6093587 41639.180414400005,45114.448152 41660.6494976,45124.7739516 41716.389077600004,45151.621910099995 41780.73915840001,45182.5993089 41823.6333488,45203.250908099995 41853.664559200006,45217.706148 41896.39164080001,45227.715313199995 41945.341326400005,45224.8568082 41998.398370400006,45213.418390499995 42049.392940000005,45206.272128 42121.531170400005,45188.1623994 42155.207991200004,45162.1060269 42205.5473184,45112.381233 42228.260922400004,45065.1983097 42244.79589840001,45030.8874543 42258.74948320001,44968.928259 42264.497146400005,44924.1288891 42261.959731200004,44896.4849469 42265.7372696,44866.620166199995 42265.2975096,44834.688466499996 42277.342536000004,44787.6682581 42277.012716000005,44766.3789924 42287.3602688,44744.9314095 42282.7603792,44721.579622499994 42265.44263040001,44702.6739102 42260.8119576,44679.3221232 42243.498606400004,44660.4164109" ;
+   ns2:Text  xsd:string  ?
+            // rdfs:comment "DN5" ;
+            # 47.42268041237113 % (46 instances). obj: xsd:string. Cardinality: {1}
+} // rdfs:comment <https://omero.ahri.org/Polyline/2226>
+
+
+weso-s:Point  [<https://omero.ahri.org/Point/>~]  AND   # 16 instances.
+{
+   rdf:type  [<http://www.openmicroscopy.org/Schemas/OME/2016-06#Point>]  ;          # 100.0 % (16 instances).
+   ns2:FillColor  xsd:integer  ;                               # 100.0 % (16 instances).
+            // rdfs:comment "0" ;
+   ns2:Y  xsd:double  ;                                        # 100.0 % (16 instances).
+            // rdfs:comment "28164.34" ;
+   dc:isPartOf  @weso-s:ROI  ;                                 # 100.0 % (16 instances).
+            // rdfs:comment <https://omero.ahri.org/ROI/4735> ;
+   ns2:StrokeWidth  BNode  ;                                   # 100.0 % (16 instances).
+            // rdfs:comment "nedaac27b8d9940399573cc8440ca01f9b80300" ;
+   ns2:StrokeColor  xsd:integer  ;                             # 100.0 % (16 instances).
+            // rdfs:comment "-256" ;
+   ns2:X  xsd:double  ;                                        # 100.0 % (16 instances).
+            // rdfs:comment "70548.93" ;
+   ns2:Text  xsd:string  ?
+            // rdfs:comment "Pin I" ;
+            # 6.25 % (1 instance). obj: xsd:string. Cardinality: {1}
+} // rdfs:comment <https://omero.ahri.org/Point/4713>
+
+
+weso-s:TagAnnotation  [<https://omero.ahri.org/TagAnnotation/>~]  AND   # 12 instances.
+{
+   ns2:Value  xsd:string  ;                                    # 100.0 % (12 instances).
+            // rdfs:comment "Barczak" ;
+   dc:isPartOf  IRI  +;                                        # 100.0 % (12 instances).
+            // rdfs:comment <https://omero.ahri.org/Image/31551> ;
+            # 41.66666666666667 % (5 instances). obj: IRI. Cardinality: {1}
+            # 8.333333333333332 % (1 instance). obj: IRI. Cardinality: {2}
+            # 8.333333333333332 % (1 instance). obj: IRI. Cardinality: {14}
+            # 8.333333333333332 % (1 instance). obj: IRI. Cardinality: {3}
+            # 8.333333333333332 % (1 instance). obj: IRI. Cardinality: {4}
+            # 8.333333333333332 % (1 instance). obj: IRI. Cardinality: {32}
+            # 8.333333333333332 % (1 instance). obj: IRI. Cardinality: {22}
+            # 8.333333333333332 % (1 instance). obj: IRI. Cardinality: {7}
+            # 83.33333333333334 % (10 instances). obj: @weso-s:Project. Cardinality: +
+            # 25.0 % (3 instances). obj: @weso-s:Image. Cardinality: +
+   rdf:type  [<http://www.openmicroscopy.org/Schemas/OME/2016-06#TagAnnotation>]  ;          # 100.0 % (12 instances).
+   ns2:Description  xsd:string  ?
+            // rdfs:comment "" ;
+            # 91.66666666666666 % (11 instances). obj: xsd:string. Cardinality: {1}
+} // rdfs:comment <https://omero.ahri.org/TagAnnotation/13718>

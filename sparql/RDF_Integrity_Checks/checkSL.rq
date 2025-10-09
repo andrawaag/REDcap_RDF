@@ -1,0 +1,5 @@
+
+prefix ome: <http://www.openmicroscopy.org/rdf/2016-06/ome_core/>
+SELECT DISTINCT ?uri WHERE { ?omeRecord ome:uri ?uri}
+#FILTER regex(?name, "^SL[0-9]+$")}
+#BIND(IRI(REPLACE(STR(?oldURI), "SL00", "SL")) AS ?newURI)}

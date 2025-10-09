@@ -1,0 +1,3 @@
+sparql:
+  description: SPARQL test, Get:label
+  variables: [isfundedby_of_project, startdate_of_project, rdfs_label_of_monetaryamount, url_of_project ]

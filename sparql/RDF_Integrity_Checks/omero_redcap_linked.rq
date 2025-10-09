@@ -1,0 +1,6 @@
+PREFIX ahri: <https://population.ahri.org/api/>
+PREFIX ome: <http://www.openmicroscopy.org/rdf/2016-06/ome_core/>
+select ?uri ?omeRecord ?redcapRecord where {
+    ?redcapRecord ahri:uri ?uri .
+    ?omeRecord ome:uri ?uri .
+}

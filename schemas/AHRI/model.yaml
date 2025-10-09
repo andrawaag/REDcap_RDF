@@ -1,0 +1,634 @@
+- ShapeMapannotation <https://omero.ahri.org/MapAnnotation/38682>:
+  - rdf:type: <http://www.openmicroscopy.org/Schemas/OME/2016-06#MapAnnotation>
+  - ns2:Map:
+    - ns2_map_of_mapannotation: "n9b37cb63326e4993918c9c5cd4e40b81b1548"
+  - ns2:Namespace:
+    - ns2_namespace_of_mapannotation: "AHRI_SL"
+  - dc:isPartOf:
+    - dc_ispartof_of_mapannotation: <https://omero.ahri.org/Image/34502>
+  - dc:identifier:
+    - dc_identifier_of_mapannotation: ns1:SL00025
+
+- ShapeImage <https://omero.ahri.org/Image/19130>:
+  - rdf:type: <http://www.openmicroscopy.org/Schemas/OME/2016-06#Image>
+  - ns2:Name:
+    - ns2_name_of_image: "SL705 A2-1 H&E.ndpi [macro image]"
+  - ns3:series:
+    - series_of_image: 1
+  - dc:isPartOf:
+    - dc_ispartof_of_image: ShapeDataset
+  - dc:hasPart:
+    - dc_haspart_of_image: ShapePixels
+  - ns2:AcquisitionDate:
+    - ns2_acquisitiondate_of_image: 1717759664000
+  - ns2:Description:
+    - ns2_description_of_image: 000377
+
+- ShapePixels <https://omero.ahri.org/Pixels/25284>:
+  - rdf:type: <http://www.openmicroscopy.org/Schemas/OME/2016-06#Pixels>
+  - ns3:sha1:
+    - sha1_of_pixels: "Pending..."
+  - ns2:SizeX:
+    - ns2_sizex_of_pixels: 109312
+  - ns2:SizeT:
+    - ns2_sizet_of_pixels: 1
+  - dc:isPartOf:
+    - dc_ispartof_of_pixels: ShapeImage
+  - ns2:Type:
+    - ns2_type_of_pixels: <https://omero.ahri.org/PixelsType/5>
+  - ns2:SizeC:
+    - ns2_sizec_of_pixels: 3
+  - ns2:SizeY:
+    - ns2_sizey_of_pixels: 203
+  - ns2:SignificantBits:
+    - ns2_significantbits_of_pixels: 8
+  - ns2:SizeZ:
+    - ns2_sizez_of_pixels: 1
+  - ns2:PhysicalSizeY:
+    - ns2_physicalsizey_of_pixels: "n9b37cb63326e4993918c9c5cd4e40b81b57088"
+  - ns2:PhysicalSizeX:
+    - ns2_physicalsizex_of_pixels: "n9b37cb63326e4993918c9c5cd4e40b81b37705"
+  - dc:hasPart:
+    - dc_haspart_of_pixels: ShapeRoi
+
+- ShapeRectangle <https://omero.ahri.org/Rectangle/4408>:
+  - rdf:type: <http://www.openmicroscopy.org/Schemas/OME/2016-06#Rectangle>
+  - ns2:X:
+    - ns2_x_of_rectangle: "62235.0"
+  - ns2:Height:
+    - ns2_height_of_rectangle: "47510.02"
+  - ns2:StrokeWidth:
+    - ns2_strokewidth_of_rectangle: "n9b37cb63326e4993918c9c5cd4e40b81b81705"
+  - dc:isPartOf:
+    - dc_ispartof_of_rectangle: ShapeRoi
+  - ns2:Y:
+    - ns2_y_of_rectangle: "60908.05"
+  - ns2:StrokeColor:
+    - ns2_strokecolor_of_rectangle: 255
+  - ns2:FillColor:
+    - ns2_fillcolor_of_rectangle: 0
+  - ns2:Width:
+    - ns2_width_of_rectangle: "31659.28"
+  - ns2:Text:
+    - ns2_text_of_rectangle: "early!!!"
+
+- ShapeRoi <https://omero.ahri.org/ROI/3012>:
+  - rdf:type: <http://www.openmicroscopy.org/Schemas/OME/2016-06#ROI>
+  - dc:hasPart:
+    - dc_haspart_of_roi: <https://omero.ahri.org/Line/2007>
+  - dc:isPartOf:
+    - dc_ispartof_of_roi: ShapePixels
+  - ns2:shapes:
+    - ns2_shapes_of_roi: <https://omero.ahri.org/Ellipse/1823>
+  - ns2:Description:
+    - ns2_description_of_roi: "SIGNIFICANT ADJACENT LYMPHOCYTIC INFLAMMATION"
+
+- ShapeEllipse <https://omero.ahri.org/Ellipse/2188>:
+  - rdf:type: <http://www.openmicroscopy.org/Schemas/OME/2016-06#Ellipse>
+  - ns2:StrokeColor:
+    - ns2_strokecolor_of_ellipse: 255
+  - ns2:RadiusX:
+    - ns2_radiusx_of_ellipse: "4172.645"
+  - ns2:FillColor:
+    - ns2_fillcolor_of_ellipse: 0
+  - ns2:StrokeWidth:
+    - ns2_strokewidth_of_ellipse: "n9b37cb63326e4993918c9c5cd4e40b81b76732"
+  - ns2:X:
+    - ns2_x_of_ellipse: "70378.52"
+  - dc:isPartOf:
+    - dc_ispartof_of_ellipse: ShapeRoi
+  - ns2:Y:
+    - ns2_y_of_ellipse: "43744.69"
+  - ns2:RadiusY:
+    - ns2_radiusy_of_ellipse: "9381.576"
+  - ns2:Text:
+    - ns2_text_of_ellipse: "Lymph Node"
+  - ns2:TheT:
+    - ns2_thet_of_ellipse: 0
+  - ns2:TheZ:
+    - ns2_thez_of_ellipse: 1
+
+- ShapeRecord <https://population.ahri.org/api/record/17>:
+  - rdf:type: ns1:record
+  - ns1:other_org_pos___2:
+    - ns1_other_org_pos___2_of_record: 0
+  - ns1:comorbidity___2:
+    - ns1_comorbidity___2_of_record: 0
+  - ns1:organs_entry_form_complete:
+    - ns1_organs_entry_form_complete_of_record: 0
+  - ns1:comorbidity___1:
+    - ns1_comorbidity___1_of_record: 1
+  - ns1:redcap_repeat_instance:
+    - ns1_redcap_repeat_instance_of_record: 1
+  - ns1:comorbidity___7:
+    - ns1_comorbidity___7_of_record: 0
+  - ns1:select_specimen_type___4:
+    - ns1_select_specimen_type___4_of_record: 0
+  - ns1:other_org_pos___3:
+    - ns1_other_org_pos___3_of_record: 0
+  - ns1:lobe_brain___2:
+    - ns1_lobe_brain___2_of_record: 0
+  - ns1:lab_id_main:
+    - ns1_lab_id_main_of_record: "SL00250"
+  - ns1:comorbidity___10:
+    - ns1_comorbidity___10_of_record: 0
+  - ns1:record_id:
+    - ns1_record_id_of_record: 318
+  - ns1:fair_data_point_catalog_information_complete:
+    - ns1_fair_data_point_catalog_information_complete_of_record: 0
+  - ns1:redcap_repeat_instrument:
+    - ns1_redcap_repeat_instrument_of_record: "organs_entry_form"
+  - ns1:comorbidity___5:
+    - ns1_comorbidity___5_of_record: 0
+  - dc:identifier:
+    - dc_identifier_of_record: ns1:SL00613
+  - ns1:fair_data_point_fdp_complete:
+    - ns1_fair_data_point_fdp_complete_of_record: 0
+  - ns1:comorbidity___3:
+    - ns1_comorbidity___3_of_record: 0
+  - ns1:organ_collected:
+    - ns1_organ_collected_of_record: 2
+  - ns1:lobe_pos___1:
+    - ns1_lobe_pos___1_of_record: 0
+  - ns1:other_org_lobe___2:
+    - ns1_other_org_lobe___2_of_record: 0
+  - ns1:comorbidity___4:
+    - ns1_comorbidity___4_of_record: 0
+  - ns1:ontology_test_form_complete:
+    - ns1_ontology_test_form_complete_of_record: 0
+  - ns1:comorbidity___8:
+    - ns1_comorbidity___8_of_record: 0
+  - ns1:lobe_brain___1:
+    - ns1_lobe_brain___1_of_record: 0
+  - ns1:lobe_pos___2:
+    - ns1_lobe_pos___2_of_record: 0
+  - ns1:other_org_pos___1:
+    - ns1_other_org_pos___1_of_record: 0
+  - ns1:other_org_lobe___4:
+    - ns1_other_org_lobe___4_of_record: 0
+  - ns1:lobe_brain___7:
+    - ns1_lobe_brain___7_of_record: 0
+  - ns1:other_org_lobe___3:
+    - ns1_other_org_lobe___3_of_record: 0
+  - ns1:participants_entry_form_complete:
+    - ns1_participants_entry_form_complete_of_record: 0
+  - ns1:lobe_brain___4:
+    - ns1_lobe_brain___4_of_record: 0
+  - ns1:lobe_brain___3:
+    - ns1_lobe_brain___3_of_record: 0
+  - ns1:other_org_lobe___1:
+    - ns1_other_org_lobe___1_of_record: 0
+  - ns1:lung_pos___3:
+    - ns1_lung_pos___3_of_record: 0
+  - ns1:select_specimen_type___2:
+    - ns1_select_specimen_type___2_of_record: 0
+  - ns1:kidney_pos1___1:
+    - ns1_kidney_pos1___1_of_record: 0
+  - ns1:lobe_pos___3:
+    - ns1_lobe_pos___3_of_record: 0
+  - ns1:lobe_brain___5:
+    - ns1_lobe_brain___5_of_record: 0
+  - ns1:lab_id:
+    - ns1_lab_id_of_record: "SL00369"
+  - ns1:lobe_brain___6:
+    - ns1_lobe_brain___6_of_record: 0
+  - ns1:lobe_pos___4:
+    - ns1_lobe_pos___4_of_record: 0
+  - ns1:kidney_pos1___3:
+    - ns1_kidney_pos1___3_of_record: 0
+  - ns1:lung_pos___1:
+    - ns1_lung_pos___1_of_record: 0
+  - ns1:lung_pos___2:
+    - ns1_lung_pos___2_of_record: 0
+  - ns1:comorbidity___9:
+    - ns1_comorbidity___9_of_record: 0
+  - ns1:comorbidity___6:
+    - ns1_comorbidity___6_of_record: 0
+  - ns1:select_specimen_type___3:
+    - ns1_select_specimen_type___3_of_record: 0
+  - ns1:select_specimen_type___1:
+    - ns1_select_specimen_type___1_of_record: 0
+  - ns1:kidney_pos1___2:
+    - ns1_kidney_pos1___2_of_record: 0
+  - ns1:autopsy:
+    - ns1_autopsy_of_record: 2
+  - ns1:specimen_source:
+    - ns1_specimen_source_of_record: 8
+  - ns1:gender_main:
+    - ns1_gender_main_of_record: 3
+  - ns1:race_main:
+    - ns1_race_main_of_record: 1
+  - ns1:hiv:
+    - ns1_hiv_of_record: 3
+  - ns1:lobe_position___2:
+    - ns1_lobe_position___2_of_record: 0
+  - ns1:macro_appraisal___5:
+    - ns1_macro_appraisal___5_of_record: 0
+  - ns1:macro_appraisal___7:
+    - ns1_macro_appraisal___7_of_record: 0
+  - ns1:specimen_position___1:
+    - ns1_specimen_position___1_of_record: 0
+  - ns1:specimen_position___3:
+    - ns1_specimen_position___3_of_record: 0
+  - ns1:macro_appraisal___2:
+    - ns1_macro_appraisal___2_of_record: 0
+  - ns1:macro_appraisal___8:
+    - ns1_macro_appraisal___8_of_record: 0
+  - ns1:macro_appraisal___1:
+    - ns1_macro_appraisal___1_of_record: 0
+  - ns1:specimen_position___2:
+    - ns1_specimen_position___2_of_record: 0
+  - ns1:macro_appraisal___4:
+    - ns1_macro_appraisal___4_of_record: 0
+  - ns1:lobe_position___3:
+    - ns1_lobe_position___3_of_record: 0
+  - ns1:macro_appraisal___6:
+    - ns1_macro_appraisal___6_of_record: 0
+  - ns1:lobe_position___1:
+    - ns1_lobe_position___1_of_record: 0
+  - ns1:organ_slices_form_complete:
+    - ns1_organ_slices_form_complete_of_record: 0
+  - ns1:lobe_position___4:
+    - ns1_lobe_position___4_of_record: 0
+  - ns1:macro_appraisal___3:
+    - ns1_macro_appraisal___3_of_record: 0
+  - ns1:slice_id:
+    - ns1_slice_id_of_record: "L"
+  - ns1:parent_organ:
+    - ns1_parent_organ_of_record: 1
+  - ns1:slice_lab_id:
+    - ns1_slice_lab_id_of_record: "SL00661"
+  - ns1:year_collected:
+    - ns1_year_collected_of_record: 2017
+  - ns1:scan_participant_id:
+    - ns1_scan_participant_id_of_record: "024-09-0270"
+  - ns1:is_slide_scanned:
+    - ns1_is_slide_scanned_of_record: 1
+  - ns1:slide_id:
+    - ns1_slide_id_of_record: "SL252 H1-1 H&E"
+  - ns1:wsi_scan_locations:
+    - ns1_wsi_scan_locations_of_record: "SL555 A3-1 H&E.ndpi"
+  - ns1:cap_slide:
+    - ns1_cap_slide_of_record: "gordon.wells@ahri.org"
+  - ns1:slides_entry_form_complete:
+    - ns1_slides_entry_form_complete_of_record: 0
+  - ns1:lab_id_slide:
+    - ns1_lab_id_slide_of_record: "SL00519"
+  - ns1:is_slide_stained:
+    - ns1_is_slide_stained_of_record: 1
+  - ns1:age_main:
+    - ns1_age_main_of_record: 48
+  - ns1:external_id:
+    - ns1_external_id_of_record: "KDH"
+  - ns1:patient_other_comments:
+    - ns1_patient_other_comments_of_record: "Returned.\nPM 1021/23 Dr NBS x495/23"
+  - ns1:history_1:
+    - ns1_history_1_of_record: "Cancer"
+  - ns1:treatment:
+    - ns1_treatment_of_record: "Rifafour/ Rifinah\nClinical Core: Rifafour,Pyradoxine"
+  - ns1:other_source:
+    - ns1_other_source_of_record: 15488
+  - ns1:captured_by_org:
+    - ns1_captured_by_org_of_record: "kapongo.lumamba@ahri.org"
+  - ns1:is_image_taken:
+    - ns1_is_image_taken_of_record: 1
+  - ns1:lab_member_final:
+    - ns1_lab_member_final_of_record: "Dr. Naidoo"
+  - ns1:block_id:
+    - ns1_block_id_of_record: "SL-25-T-7"
+  - ns1:lab_id_block:
+    - ns1_lab_id_block_of_record: "SL00020"
+  - ns1:blocks_entry_form_complete:
+    - ns1_blocks_entry_form_complete_of_record: 0
+  - ns1:lab_member_select:
+    - ns1_lab_member_select_of_record: "Kapongo"
+  - ns1:is_this_specimen_assigned:
+    - ns1_is_this_specimen_assigned_of_record: 1
+  - ns1:block_slice_id:
+    - ns1_block_slice_id_of_record: "F"
+  - ns1:tb:
+    - ns1_tb_of_record: 2
+  - ns1:sample_collection_date:
+    - ns1_sample_collection_date_of_record: "2016-09-02"
+  - ns1:block_scan_locs:
+    - ns1_block_scan_locs_of_record: "\\dbn-ps-nas-01\Steyn Lab\Imaging\All SLs\SL025\MicroCT Images\SL25_A_IJGKO_etc"
+  - ns1:is_block_ctscanned:
+    - ns1_is_block_ctscanned_of_record: 1
+  - ns1:block_size:
+    - ns1_block_size_of_record: 1
+  - ns1:cap_by_block:
+    - ns1_cap_by_block_of_record: "gordon.wells@ahri.org"
+  - ns1:select_the_projects_text:
+    - ns1_select_the_projects_text_of_record: "TB+"
+  - ns1:captured_by:
+    - ns1_captured_by_of_record: "kapongo.lumamba@ahri.org"
+  - ns1:cause_of_death:
+    - ns1_cause_of_death_of_record: "Hypertensive atherosclerotic cardiovascular diseasein setting of anemia due to partial hepatic resection\n"
+  - ns1:macro_image_taken:
+    - ns1_macro_image_taken_of_record: 0
+  - ns1:return_needed:
+    - ns1_return_needed_of_record: 0
+  - ns1:sample_put_through:
+    - ns1_sample_put_through_of_record: 0
+  - ns1:gross_img_0:
+    - ns1_gross_img_0_of_record: "SL04-22_0003.jpg"
+  - ns1:related:
+    - ns1_related_of_record: 1
+  - ns1:gross_img_1:
+    - ns1_gross_img_1_of_record: "DSC_0579.JPG"
+  - ns1:external_id2:
+    - ns1_external_id2_of_record: 1191507
+  - ns1:store_loc_org:
+    - ns1_store_loc_org_of_record: "4th Floor"
+  - ns1:macro_image:
+    - ns1_macro_image_of_record: "SL03-S (2).JPG"
+  - ns1:macro_image_2:
+    - ns1_macro_image_2_of_record: "SL09_AB.jpg"
+  - ns1:rs_id:
+    - ns1_rs_id_of_record: "RS 18-5067"
+  - ns1:nature_of_death:
+    - ns1_nature_of_death_of_record: 2
+  - ns1:nr_blocks:
+    - ns1_nr_blocks_of_record: 3
+  - ns1:tissue_reserved:
+    - ns1_tissue_reserved_of_record: 0
+  - ns1:date_of_birth:
+    - ns1_date_of_birth_of_record: 1985
+  - ns1:other_comorbility:
+    - ns1_other_comorbility_of_record: "MONDO:0018469"
+  - ns1:macro_obser_org:
+    - ns1_macro_obser_org_of_record: "A shrunken lung with shrinkage of upper and lower lobes with cavitation involving upper and lower lobes was received. There were multiple tubercles in both lobes. Many were calcified. Aspergilloma was noted in the cavity. The pleura was thickened and fibrotic."
+  - ns1:ctscan:
+    - ns1_ctscan_of_record: 0
+  - ns1:mapped_image:
+    - ns1_mapped_image_of_record: "SL03-O (4).jpg"
+  - ns1:non_specific___2:
+    - ns1_non_specific___2_of_record: 0
+  - ns1:routines___3:
+    - ns1_routines___3_of_record: 0
+  - ns1:non_specific___12:
+    - ns1_non_specific___12_of_record: 0
+  - ns1:lab_id3:
+    - ns1_lab_id3_of_record: "SL00310"
+  - ns1:routines___4:
+    - ns1_routines___4_of_record: 0
+  - ns1:specific___6:
+    - ns1_specific___6_of_record: 0
+  - ns1:date_captured:
+    - ns1_date_captured_of_record: "2024-07-30"
+  - ns1:specific___5:
+    - ns1_specific___5_of_record: 0
+  - ns1:findings:
+    - ns1_findings_of_record: 2
+  - ns1:specific___3:
+    - ns1_specific___3_of_record: 1
+  - ns1:appraised_by:
+    - ns1_appraised_by_of_record: "Dr. Naidoo T"
+  - ns1:non_specific___3:
+    - ns1_non_specific___3_of_record: 0
+  - ns1:rep_lung___4:
+    - ns1_rep_lung___4_of_record: 0
+  - ns1:specific___4:
+    - ns1_specific___4_of_record: 0
+  - ns1:rep_lung___1:
+    - ns1_rep_lung___1_of_record: 0
+  - ns1:non_specific___8:
+    - ns1_non_specific___8_of_record: 1
+  - ns1:histopathological_appraisal_complete:
+    - ns1_histopathological_appraisal_complete_of_record: 0
+  - ns1:non_specific___11:
+    - ns1_non_specific___11_of_record: 0
+  - ns1:slide_id2:
+    - ns1_slide_id2_of_record: "F16"
+  - ns1:non_specific___13:
+    - ns1_non_specific___13_of_record: 0
+  - ns1:specific___7:
+    - ns1_specific___7_of_record: 0
+  - ns1:non_specific___6:
+    - ns1_non_specific___6_of_record: 0
+  - ns1:specific___2:
+    - ns1_specific___2_of_record: 1
+  - ns1:rep_lung___5:
+    - ns1_rep_lung___5_of_record: 0
+  - ns1:rep_lung___2:
+    - ns1_rep_lung___2_of_record: 1
+  - ns1:non_specific___10:
+    - ns1_non_specific___10_of_record: 0
+  - ns1:non_specific___9:
+    - ns1_non_specific___9_of_record: 1
+  - ns1:rep_lung___7:
+    - ns1_rep_lung___7_of_record: 0
+  - ns1:routines___2:
+    - ns1_routines___2_of_record: 0
+  - ns1:rep_lung___3:
+    - ns1_rep_lung___3_of_record: 0
+  - ns1:cap_by_hist:
+    - ns1_cap_by_hist_of_record: "kapongo.lumamba@ahri.org"
+  - ns1:sample_year:
+    - ns1_sample_year_of_record: 2022
+  - ns1:rep_lung___6:
+    - ns1_rep_lung___6_of_record: 0
+  - ns1:non_specific___1:
+    - ns1_non_specific___1_of_record: 0
+  - ns1:non_specific___5:
+    - ns1_non_specific___5_of_record: 0
+  - ns1:specific___1:
+    - ns1_specific___1_of_record: 0
+  - ns1:routines___1:
+    - ns1_routines___1_of_record: 1
+  - ns1:specific___8:
+    - ns1_specific___8_of_record: 0
+  - ns1:non_specific___4:
+    - ns1_non_specific___4_of_record: 0
+  - ns1:non_specific___7:
+    - ns1_non_specific___7_of_record: 0
+  - ns1:macroct_image:
+    - ns1_macroct_image_of_record: "SL05-g micro.jpg"
+  - ns1:tissue_type:
+    - ns1_tissue_type_of_record: "Lung"
+  - ns1:puthru_date:
+    - ns1_puthru_date_of_record: "2022-06-14"
+  - ns1:microct_scan_date:
+    - ns1_microct_scan_date_of_record: "2023-02-08"
+  - ns1:summary:
+    - ns1_summary_of_record: "Corelate with macro image/specimen regarding possible cavitation.\nIntra-alveoler macrophages with aggregation\nSmooth muscle proliferation in fibrosis."
+  - ns1:race_main_2:
+    - ns1_race_main_2_of_record: "Thesaurus:C48323"
+  - ns1:macro_appraisal_org:
+    - ns1_macro_appraisal_org_of_record: "SL05_Redacted.pdf"
+  - ns1:findings_other:
+    - ns1_findings_other_of_record: "Architectural distortion by fibrosis, NNGI and cavitation.\nVariable congestion + expansion of airways."
+  - ns1:is_sub_samp:
+    - ns1_is_sub_samp_of_record: 0
+  - ns1:lab_member_text:
+    - ns1_lab_member_text_of_record: "lizwe sithole"
+  - ns1:scanned_samples___2:
+    - ns1_scanned_samples___2_of_record: 0
+  - ns1:scanned_samples___1:
+    - ns1_scanned_samples___1_of_record: 0
+  - ns1:scanned_samples___4:
+    - ns1_scanned_samples___4_of_record: 0
+  - ns1:scanned_samples___3:
+    - ns1_scanned_samples___3_of_record: 0
+  - ns1:micro_ct_image:
+    - ns1_micro_ct_image_of_record: "SL25 micrCT.jpg"
+  - ns1:microct_form_complete:
+    - ns1_microct_form_complete_of_record: 0
+  - ns1:macro_img:
+    - ns1_macro_img_of_record: "\\ahri\shareddata\Science\ResearchPlatform\Imaging Repo\MacroPath\Repo1\Steyn Lab\SL03"
+  - ns1:scan_loc:
+    - ns1_scan_loc_of_record: "\\ahri\shareddata\Science\ResearchPlatform\Imaging Repo\SkyScan\Repo1\Steyn Lab\0 TB ACTIVE\SL02-22"
+  - ns1:captured_by_orgv2:
+    - ns1_captured_by_orgv2_of_record: "gordon.wells@ahri.org"
+  - ns1:contrast_stain_used_slice:
+    - ns1_contrast_stain_used_slice_of_record: "PTA"
+  - ns1:contrast_stain_yn_slice:
+    - ns1_contrast_stain_yn_slice_of_record: 1
+  - ns1:summary_from_source:
+    - ns1_summary_from_source_of_record: "consistent with sudden death due to epilepsy; reportedly well controlled on medications but with recent breakthrough seizure"
+  - ns1:steyn_lab_id:
+    - ns1_steyn_lab_id_of_record: "SL00029"
+  - ns1:rep_other:
+    - ns1_rep_other_of_record: "Parenchyma only"
+  - ns1:organ:
+    - ns1_organ_of_record: "Thesaurus:C12468"
+  - ns1:other_macro:
+    - ns1_other_macro_of_record: "nodules"
+  - ns1:slide_block_id:
+    - ns1_slide_block_id_of_record: "SL01-A-1a"
+  - ns1:tissue_proc_date:
+    - ns1_tissue_proc_date_of_record: "2022-06-14"
+  - ns1:epilepsy:
+    - ns1_epilepsy_of_record: 1
+  - ns1:diabetes:
+    - ns1_diabetes_of_record: 1
+  - ns1:image_taken:
+    - ns1_image_taken_of_record: 0
+  - ns1:tissue_avail:
+    - ns1_tissue_avail_of_record: 1
+  - ns1:hypertension:
+    - ns1_hypertension_of_record: 1
+  - ns1:microtome_date:
+    - ns1_microtome_date_of_record: "2022-06-13"
+  - ns1:stain_name:
+    - ns1_stain_name_of_record: "H&E"
+  - ns1:waxed_date:
+    - ns1_waxed_date_of_record: "2022-06-16"
+  - ns1:date_last_modified2_org:
+    - ns1_date_last_modified2_org_of_record: "2023-10-02 11:51"
+  - ns1:is_block_waxed:
+    - ns1_is_block_waxed_of_record: 1
+  - ns1:slide_size:
+    - ns1_slide_size_of_record: 1
+  - ns1:stain_date:
+    - ns1_stain_date_of_record: "2022-06-14"
+  - ns1:stain_type:
+    - ns1_stain_type_of_record: 1
+  - ns1:block_storage:
+    - ns1_block_storage_of_record: "4th Floor"
+  - ns1:is_tissue_processed:
+    - ns1_is_tissue_processed_of_record: 1
+  - ns1:contrast_stained_yn_organ:
+    - ns1_contrast_stained_yn_organ_of_record: 0
+
+- ShapeLine <https://omero.ahri.org/Line/4235>:
+  - rdf:type: <http://www.openmicroscopy.org/Schemas/OME/2016-06#Line>
+  - ns2:X1:
+    - ns2_x1_of_line: "76471.53"
+  - ns2:StrokeColor:
+    - ns2_strokecolor_of_line: 255
+  - ns2:StrokeWidth:
+    - ns2_strokewidth_of_line: "n9b37cb63326e4993918c9c5cd4e40b81b77879"
+  - ns2:FillColor:
+    - ns2_fillcolor_of_line: 0
+  - ns2:Y1:
+    - ns2_y1_of_line: "27440.71"
+  - dc:isPartOf:
+    - dc_ispartof_of_line: ShapeRoi
+  - ns2:Y2:
+    - ns2_y2_of_line: "81368.6"
+  - ns2:X2:
+    - ns2_x2_of_line: "19608.93"
+  - ns2:MarkerStart:
+    - ns2_markerstart_of_line: "Arrow"
+  - ns2:Text:
+    - ns2_text_of_line: "SL252 D13 (Cavity 1)"
+  - ns2:MarkerEnd:
+    - ns2_markerend_of_line: "Arrow"
+
+- ShapeDataset <https://omero.ahri.org/Dataset/775>:
+  - rdf:type: <http://www.openmicroscopy.org/Schemas/OME/2016-06#Dataset>
+  - ns2:Name:
+    - ns2_name_of_dataset: "Macro Images SL00234"
+  - dc:isPartOf:
+    - dc_ispartof_of_dataset: ShapeProject
+  - dc:hasPart:
+    - dc_haspart_of_dataset: ShapeImage
+  - ns2:Description:
+    - ns2_description_of_dataset: ""
+
+- ShapePolygon <https://omero.ahri.org/Polygon/1166>:
+  - rdf:type: <http://www.openmicroscopy.org/Schemas/OME/2016-06#Polygon>
+  - ns2:FillColor:
+    - ns2_fillcolor_of_polygon: 0
+  - ns2:Points:
+    - ns2_points_of_polygon: "27777.79146400001,61214.6643821 27730.89545760001,61159.921812500004 27644.860811200007,61112.9543765 27558.667851200007,61066.022122099996 27441.498196800007,61026.939762199996 27246.02487680001,60995.6105474 27050.410833600006,60964.378081999996 26815.658150400006,60964.378081999996 26526.39281760001,60964.378081999996 26072.780377600007,61058.1722276 25947.580705600005,61089.5058401 25298.231089600005,61222.483492700005 24727.440200000012,61347.6112508 24445.65958240001,61425.8067545 24218.92812160001,61519.7020472 24031.194577600007,61644.860589200005 23882.485336000005,61785.6573524 23749.67781600001,61902.9659999 23616.597644800007,62020.2746474 23468.02033120001,62161.0670129 23335.08088320001,62270.560947499995 23178.62307040001,62411.3577107 23092.579628800006,62505.2530034 23022.15646240001,62606.9322251 22998.64689280001,62661.644010799995 22959.631385600005,62763.389198000004 22920.62467360001,62865.0376358 22865.83937280001,63021.4946087 22818.934571200007,63146.6531507 22764.026137600005,63334.342589 22725.010630400007,63451.6908158 22709.24083680001,63561.1847504 22693.620561600008,63662.8639721 22693.620561600008,63764.5387961 22693.620561600008,63858.4340888 22709.24083680001,63960.0825266 22740.64849600001,64053.977819299995 22764.026137600005,64171.3216484 22818.934571200007,64304.299301 22912.735379200007,64476.3900974 22944.01111040001,64562.4047117 23030.045756800006,64679.7133592 23092.579628800006,64773.5734703 23147.22420640001,64828.289653700005 23225.51907680001,64922.2157303 23295.792724800005,64976.9319137 23381.985684800005,65039.5287755 23546.183273600007,65149.0227101 23671.38294560001,65188.1358539 23890.37463040001,65282.0003627 24031.194577600007,65321.1135065 24164.142820800007,65352.3811535 24304.971563200008,65383.7103683 24500.43608800001,65383.7103683 24696.050131200005,65360.1958664 24852.50794400001,65313.263611999995 25032.484121600006,65258.5166447 25196.69050560001,65195.9549645 25462.71012480001,65063.0080958 25603.40693920001,64992.5613395 25853.79748800001,64843.985045 26104.047313600007,64656.2296412 26268.24490240001,64538.9209937 26581.16932320001,64296.4494065 26940.849027200005,64030.529282899995 27175.61050560001,63889.736917400005 27566.82979680001,63568.9686794 27777.79146400001,63350.0115941 27871.583476800006,63240.5176595 27996.78314880001,63107.5400069 28121.974025600008,62919.7846031 28231.53583200001,62708.6422307 28278.572561600005,62622.5968325 28333.085211200007,62466.104678 28387.861716800006,62348.861996 28403.763438400005,62262.8165978 28427.14987520001,62161.0670129 28434.75772320001,62098.5053327 28434.75772320001,61981.2274691 28450.527516800008,61902.9659999 28466.16538240001,61754.358921499996 28466.16538240001,61660.4592311 28466.16538240001,61566.6299039 28442.647017600008,61402.358218099995 28419.128652800006,61277.23046 28411.380081600008,61191.1850618 28372.36457440001,61058.1722276 28348.986932800006,61003.460441899995 28340.965710400007,60948.678293000004"
+  - dc:isPartOf:
+    - dc_ispartof_of_polygon: ShapeRoi
+  - ns2:StrokeWidth:
+    - ns2_strokewidth_of_polygon: "n9b37cb63326e4993918c9c5cd4e40b81b81239"
+  - ns2:StrokeColor:
+    - ns2_strokecolor_of_polygon: 255
+  - ns2:Text:
+    - ns2_text_of_polygon: "Polygon I"
+
+- ShapeProject <https://omero.ahri.org/Project/884>:
+  - rdf:type: <http://www.openmicroscopy.org/Schemas/OME/2016-06#Project>
+  - dc:hasPart:
+    - dc_haspart_of_project: ShapeDataset
+  - ns2:Name:
+    - ns2_name_of_project: "SL00624"
+  - ns2:Description:
+    - ns2_description_of_project: ""
+
+- ShapePolyline <https://omero.ahri.org/Polyline/1024>:
+  - rdf:type: <http://www.openmicroscopy.org/Schemas/OME/2016-06#Polyline>
+  - ns2:StrokeColor:
+    - ns2_strokecolor_of_polyline: 255
+  - ns2:StrokeWidth:
+    - ns2_strokewidth_of_polyline: "n9b37cb63326e4993918c9c5cd4e40b81b81534"
+  - ns2:FillColor:
+    - ns2_fillcolor_of_polyline: 0
+  - dc:isPartOf:
+    - dc_ispartof_of_polyline: ShapeRoi
+  - ns2:Points:
+    - ns2_points_of_polyline: "35821.6686863,13414.457422700001 35448.6967836,13116.0817097 34478.923703,12743.064578000001 33882.0772961,12444.688865 33136.1380136,12146.358381000002 32613.9285025,11922.5291058 31867.989219999996,11698.7495825 31494.9223364,11624.153392800003 31121.950433699996,11549.4622222 30375.9161703,11400.324117600001 29928.3028489,11325.6826989 29331.5966519,11251.086509200002 28734.799996899997,11101.9484046 27168.225738399997,10728.931272900001 26422.191475,10505.0974748 25899.9864868,10430.551037000001 25527.0598131,10430.551037000001 25228.589119199998,10430.551037000001 24781.0255497,10430.551037000001 24035.081744299998,10654.3350832 23438.2850893,11176.540071400002 22990.7169969,11474.9157844 21871.7108308,12295.4557795 21647.9313075,12593.9219505 21200.322508999998,12892.252434500002 20827.3506063,13265.319318100002 20528.9251414,13787.4745544 20379.7372849,14085.854790300002 20230.549428399998,14608.0597785 20230.549428399998,15204.860956400002 20305.1410952,15652.424525900002 20678.1129979,16025.396428600001 20827.3506063,16398.4633122 21125.7263193,16995.1695092 21647.9313075,17965.033047800003 21946.2572686,18412.6011402 22468.5120087,18860.164709700002 22617.6501133,19307.7735082 22766.9374736,19606.1492212 23065.2634347,19904.5746861 23289.0474809,20128.4039613 23438.2850893,20426.7344453 23811.2524691,21023.5356232 24035.081744299998,21247.3151465 24408.053647,21620.3820301 24930.2586352,21993.3539328 25676.2024406,22515.558921 26347.595285299998,23112.265118 26944.446215099997,23559.8784394 27690.3854976,24007.4420089 28585.5623885,24455.1005593 29853.7564111,25201.089593700002 30375.9161703,25499.4698296 30823.5294917,25723.2991048 31121.950433699996,25797.8907716 31494.9223364,25947.0786281 31942.5356578,25947.0786281 32240.9113708,26021.6748178 32613.9285025,26096.2664846 33061.5418239,26096.2664846 34105.9065713,26096.2664846 34553.4701408,26096.2664846 34926.4917954,26096.2664846 35374.1005939,26096.2664846 36418.4653413,25872.4869613 36866.0786627,25574.0614964 37164.4543757,25424.8736399 37612.0676971,25275.6857834 37984.9898479,25126.4979269 38283.465064699994,24977.2603185 39104.0005369,24380.5541215 39327.7800602,24082.083427600002 39626.2055251,23858.303904300003 39999.2226568,23559.8784394 40372.1945595,23112.265118 40446.7862263,22590.1053588 40446.7862263,22067.9501225 40446.7862263,21694.9284679 40446.7862263,21023.5356232 40446.7862263,20725.110158299998 40446.7862263,20277.5465888 40446.7862263,19979.1211239 40521.427644999996,19531.557554400002 40297.5983698,18636.425892500003 40148.3652843,18114.2209043 39999.2226568,17741.2490016 39849.9895713,17293.6854321 39551.6093354,16920.5733195 39178.6871846,16249.2257038 38954.808157499996,15950.8952198 38805.620301,15652.424525900002 38581.7910258,15354.003583900001 38358.05673149999,15130.2195377 38059.6312666,14981.076910200001 37835.8969723,14757.247635000002 37612.0676971,14533.468111700002 37313.6422322,14309.684065500001 37015.221290199996,14011.258600600002 36716.8455772,13862.075267 36343.8239226,13638.2414689 36045.4482096,13489.103364300001 35597.839411099994,13414.457422700001"
+  - ns2:Text:
+    - ns2_text_of_polyline: "Necrotic Granuloma"
+
+- ShapePoint <https://omero.ahri.org/Point/4957>:
+  - rdf:type: <http://www.openmicroscopy.org/Schemas/OME/2016-06#Point>
+  - ns2:X:
+    - ns2_x_of_point: "92969.71"
+  - ns2:Y:
+    - ns2_y_of_point: "55202.81"
+  - ns2:StrokeColor:
+    - ns2_strokecolor_of_point: "-256"
+  - dc:isPartOf:
+    - dc_ispartof_of_point: ShapeRoi
+  - ns2:FillColor:
+    - ns2_fillcolor_of_point: 0
+  - ns2:StrokeWidth:
+    - ns2_strokewidth_of_point: "n9b37cb63326e4993918c9c5cd4e40b81b81199"
+  - ns2:Text:
+    - ns2_text_of_point: "Pin I"
+
+- ShapeTagannotation <https://omero.ahri.org/TagAnnotation/13714>:
+  - dc:isPartOf:
+    - dc_ispartof_of_tagannotation: <https://omero.ahri.org/Project/272>
+  - rdf:type: <http://www.openmicroscopy.org/Schemas/OME/2016-06#TagAnnotation>
+  - ns2:Value:
+    - ns2_value_of_tagannotation: "Mpume Pediatric"
+  - ns2:Description:
+    - ns2_description_of_tagannotation: ""
+

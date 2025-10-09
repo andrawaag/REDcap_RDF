@@ -1,0 +1,21 @@
+PREFIX rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dc:    <http://purl.org/dc/elements/1.1/>
+PREFIX steyn: <http://steynlab.ahri.org/identifiers/>
+PREFIX redcap:<http://steynlab.ahri.org/redcap/>
+PREFIX ahri:  <https://population.ahri.org/api/>
+PREFIX ome:   <http://www.openmicroscopy.org/rdf/2016-06/ome_core/>
+PREFIX dcterms:<http://purl.org/dc/terms/>
+
+SELECT DISTINCT ?slnum ?redcap ?omero_project ?hiv
+WHERE {
+  ?redcap ahri:uri ?uri ;
+          ahri:hiv ?hiv .
+
+  # Any OMERO node that was linked with the same constructed AHRI URI
+  ?omeRecord ome:uri ?uri .
+  ?omero_project dcterms:hasPart ?omeRecord .
+
+  # Extract SL number from the constructed URI (e.g. https://population.ahri.org/api/SL00006 -> SL00006)
+  BIND(REPLACE(STR(?uri), "^https://population\\.ahri\\.org/api/", "") AS ?slnum)
+}

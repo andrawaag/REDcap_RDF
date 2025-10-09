@@ -1,0 +1,12 @@
+# FIRST we add the dc:identifier triples for redcap records based on their lab_id_main values
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX steyn: <http://steynlab.ahri.org/identifiers/>
+
+INSERT {
+    ?sample dc:identifier ?sampleIdentifierURI .
+}
+WHERE {
+    ?sample <https://population.ahri.org/api/lab_id_main> ?sample_id .
+    BIND(IRI(CONCAT("http://steynlab.ahri.org/identifiers/", ENCODE_FOR_URI(?sample_id))) AS ?sampleIdentifierURI)
+}

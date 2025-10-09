@@ -1,0 +1,16 @@
+PREFIX ome: <http://www.openmicroscopy.org/rdf/2016-06/ome_core/>
+PREFIX redcap: <https://population.ahri.org/api/>
+
+SELECT *
+WHERE {
+    ?omeRecord ome:Name ?omeID .
+
+    # Extract only the first token (before any space)
+    # BIND(STRBEFORE(STR(?omeID), " ") AS ?token)
+
+    # Only match if the token is exactly SL + digits
+    #FILTER regex(?token, "^SL[0-9]+$")
+
+    BIND(IRI(CONCAT("https://population.ahri.org/api/", ?omeID)) AS ?constructedURI)
+}
+

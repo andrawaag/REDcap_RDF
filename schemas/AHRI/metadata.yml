@@ -1,0 +1,16 @@
+title: AHRI TB Knowledgebase
+website:
+description: This is a knowledge graph that combines (meta)data from both OMERO (images) and REDCap (clinical data) into a single RDF graph. The knowledge graph is centered around patients, and links to their clinical data, as well as the images taken from them. The RDF graph is generated using a custom Python script that extracts data from both OMERO and REDCap, and then combines it into a single RDF graph using the rdflib library. The resulting RDF graph is then available for querying and analysis.
+tags: [ tuberculosis, bioimaging, clinical data, omics, omero, redcap ]
+provider: AHRI
+creators:
+  - name: Gordon Wells
+    affiliation: AHRI, Durban, South Africa
+  - name: Andra Waagmeester
+    affiliation: Amsterdam UMC, The Netherlands
+version: version 1
+issued: 2025-10-03
+license:
+  - name: Creative Commons Attribution 4.0 International (CC BY-SA 4.0)
+  - url: https://creativecommons.org/licenses/by-sa/4.0/
+  - credit: AHRI licensed under CC Attribution
